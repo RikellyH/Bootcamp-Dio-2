@@ -1,0 +1,174 @@
+body {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.container {
+  min-height: 100vh;
+  margin-top: 25px;
+  overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* #slider {
+  width: 250px;
+  max-width: 250px;
+  height: 54vw;
+  max-height: 500px;
+  position: relative;
+}
+ */
+#slider img {
+  position: absolute;
+
+  width: 247px;
+  height: 540px;
+
+  margin-top: -614px;
+  margin-left: 157px;
+
+  transition: opacity 800ms;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: stretch;
+  position: relative;
+}
+
+.login {
+  width: 350px;
+  height: 400px;
+  background-color: #fff;
+
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 1px;
+  margin: -50px 0px 80px;
+}
+
+.login img {
+  max-height: 100%;
+  max-width: 100%;
+  margin-right: 5px;
+}
+
+input {
+  width: 80%;
+  padding: 9px 0 7px 8px;
+  margin: 5px 33px 5px;
+
+  border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
+  border-radius: 4px;
+  text-overflow: ellipsis;
+}
+
+.logo {
+  margin: 30px 80px 8px 80px;
+}
+
+.sign-up {
+  margin-top: -65px;
+  height: 60px;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #fff;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.7);
+}
+
+.space {
+  margin-top: 24px;
+}
+
+.enter {
+  width: 80%;
+  margin: 7px 33px 5px;
+  padding: 6px;
+
+  background-color: #0092e7;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 4px;
+
+  position: relative;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.line {
+  border-top: 1px solid #e2e2e2;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+
+  margin: 10px 40px 18px;
+  display: block;
+  text-align: center;
+}
+
+.line legend {
+  padding: 5px 10px;
+  color: #a7a5a8;
+}
+
+.alternative-login {
+  color: #0864be;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 12px;
+}
+
+.facebook-login {
+  color: #385185;
+  font-weight: 600;
+  font-size: 14px;
+
+  cursor: pointer;
+  margin: 8px;
+}
+
+.reminder {
+  margin-top: 12px;
+  color: #00376b;
+}
+
+a {
+  text-decoration: none;
+}
+
+.download {
+  text-align: center;
+}
+
+.download-app {
+  display: flex;
+  justify-content: center;
+
+  font-size: 14px;
+  margin: 15px;
+}
+
+.create-account a {
+  color: #0095f6;
+}
+
+.copyright {
+  padding: 0px 16px 0px 16px;
+  margin-bottom: 26px;
+  color: #a7a5a8;
+
+  text-align: center;
+}

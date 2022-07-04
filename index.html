@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./imagens/favicon.png" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" />
+    <title>Kellygram</title>
+  </head>
+  <body>
+    <main>
+      <section class="container">
+        <figure>
+          <img
+            src="./imagens/celular.png"
+            alt="Interface do instagram versão mobile"
+          />
+          <div id="slider">
+            <img
+              class="selected"
+              src="./imagens/carousel 1.png"
+              alt="Mulher segurando um gato"
+            /><img
+              src="./imagens/carousel 2.png"
+              alt="Um homem e uma mulher deitados cada um com uma maçã equilibrada na testa"
+            /><img
+              src="./imagens/image 7.png"
+              alt="Interface de um perfil pessoal"
+            /><img
+              src="./imagens/image 8.png"
+              alt="Uma conversa entre duas pessoas"
+            />
+          </div>
+        </figure>
+        <div class="login-content">
+          <div class="login">
+            <img
+              class="logo"
+              src="./imagens/logo.png"
+              alt="logomarca do instagram"
+            />
+            <form>
+              <div class="space">
+                <div class="box-1">
+                  <label for="user"></label>
+                  <input
+                    type="text"
+                    id="user"
+                    placeholder="Telefone, nome de usuário ou email"
+                  />
+                </div>
+                <div class="box-2">
+                  <label for="password"></label>
+                  <input type="password" id="password" placeholder="Senha" />
+                </div>
+                <button type="submit" class="enter">Entrar</button>
+                <fieldset class="line">
+                  <legend>OU</legend>
+                </fieldset>
+                <div class="alternative-login">
+                  <button type="button" class="facebook-login">
+                    <img src="./imagens/facebook.png" />
+                    <span class="facebook-link">Entrar com o Facebook</span>
+                  </button>
+
+                  <a
+                    class="reminder"
+                    href="https://www.instagram.com/accounts/password/reset/"
+                    >Esqueceu a senha?</a
+                  >
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="sign-up">
+            <p class="create-account">
+              Não tem uma conta?
+              <a href="https://www.instagram.com/accounts/emailsignup/"
+                >Cadastre-se</a
+              >
+            </p>
+          </div>
+          <div class="download">
+            <p class="download-app">Obtenha o aplicativo.</p>
+            <img
+              src="./imagens/appstore.png"
+              alt="ícone para baixar na App Store"
+            />
+            <img
+              src="./imagens/playstore.png"
+              alt="ícone para baixar na Google Play"
+            />
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="copyright">
+          Este projeto foi desenvolvido por
+          <a href="https://github.com/rikellyH/">Rikelly Mendes</a> cumprindo o
+          desafio de clonar a interface do Instagram proposto pela
+          <a href="http://dio.me">Digital Innovation One Inc. </a>. Todos os
+          direitos reservados para © 2022 Instagram from Meta
+        </div>
+      </footer>
+    </main>
+    <script defer src="./js/index.js"></script>
+  </body>
+</html>
