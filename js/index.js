@@ -1,4 +1,4 @@
-let time = 5000,
+let time = 8000,
   currentImageIndex = 0,
   images = document.querySelectorAll("#slider img");
 max = images.length;
@@ -9,8 +9,8 @@ function nextImage() {
   currentImageIndex++;
 
   if (currentImageIndex >= max) currentImageIndex = 0;
-
   images[currentImageIndex].classList.add("selected");
+  console.log(images[currentImageIndex]);
 }
 
 function start() {

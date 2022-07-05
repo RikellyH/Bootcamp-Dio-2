@@ -1,6 +1,16 @@
+:root {
+  --blue-1: #0092e7;
+  --blue-2: #385185;
+  --blue-3: #00376b;
+  --blue-4: #0095f6;
+  --gray-1: #e2e2e2;
+  --gray-2: #a7a5a8;
+}
+
 body {
   font-size: 14px;
   line-height: 18px;
+  position: relative;
 }
 
 .container {
@@ -13,24 +23,29 @@ body {
   align-items: center;
 }
 
-/* #slider {
-  width: 250px;
-  max-width: 250px;
-  height: 54vw;
-  max-height: 500px;
+.images {
   position: relative;
 }
- */
+
 #slider img {
   position: absolute;
-
   width: 247px;
   height: 540px;
 
-  margin-top: -614px;
-  margin-left: 157px;
+  top: 26px;
+  right: 60px;
+  opacity: 0;
 
   transition: opacity 800ms;
+}
+
+#slider img.selected {
+  opacity: 1;
+}
+
+.images {
+  display: flex;
+  align-items: center;
 }
 
 .login-content {
@@ -39,6 +54,8 @@ body {
 
   align-items: stretch;
   position: relative;
+  gap: 1rem;
+  margin-top: -30px;
 }
 
 .login {
@@ -48,7 +65,6 @@ body {
 
   border: 1px solid rgba(var(--b6a, 219, 219, 219), 1);
   border-radius: 1px;
-  margin: -50px 0px 80px;
 }
 
 .login img {
@@ -72,7 +88,6 @@ input {
 }
 
 .sign-up {
-  margin-top: -65px;
   height: 60px;
   position: relative;
 
@@ -93,7 +108,7 @@ input {
   margin: 7px 33px 5px;
   padding: 6px;
 
-  background-color: #0092e7;
+  background-color: var(--blue-1);
   color: #fff;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -105,7 +120,7 @@ input {
 }
 
 .line {
-  border-top: 1px solid #e2e2e2;
+  border-top: 1px solid var(--gray-1);
   border-bottom: none;
   border-left: none;
   border-right: none;
@@ -117,11 +132,10 @@ input {
 
 .line legend {
   padding: 5px 10px;
-  color: #a7a5a8;
+  color: var(--gray-2);
 }
 
 .alternative-login {
-  color: #0864be;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -132,7 +146,7 @@ input {
 }
 
 .facebook-login {
-  color: #385185;
+  color: var(--blue-2);
   font-weight: 600;
   font-size: 14px;
 
@@ -142,7 +156,7 @@ input {
 
 .reminder {
   margin-top: 12px;
-  color: #00376b;
+  color: var(--blue-3);
 }
 
 a {
@@ -158,17 +172,17 @@ a {
   justify-content: center;
 
   font-size: 14px;
-  margin: 15px;
+  margin-bottom: 15px;
 }
 
 .create-account a {
-  color: #0095f6;
+  color: var(--blue-4);
 }
 
 .copyright {
   padding: 0px 16px 0px 16px;
   margin-bottom: 26px;
-  color: #a7a5a8;
+  color: var(--gray-2);
 
   text-align: center;
 }
